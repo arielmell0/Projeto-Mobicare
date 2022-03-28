@@ -1,7 +1,7 @@
 import { Sequelize, DataTypes } from 'sequelize'
 import moment from 'moment'
 
-const database = new Sequelize('crud', 'root', '', {host: 'localhost', dialect: 'mysql'});
+const database = new Sequelize('mysql://b338f1244a4c6c:e56f1c77@us-cdbr-east-05.cleardb.net/heroku_2d7b4808a116a12?reconnect=true');
 
 const Tarefa = database.define('Tarefa', {
     id: {

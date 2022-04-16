@@ -1,7 +1,7 @@
 import { Sequelize, DataTypes } from 'sequelize'
 import moment from 'moment'
 
-const database = new Sequelize('crud', 'b338f1244a4c6c', 'e56f1c77', {host: 'us-cdbr-east-05.cleardb.net', dialect: 'mysql'});
+const database = new Sequelize('crud', 'root', '', {host: 'localhost', dialect: 'mysql'});
 
 const Tarefa = database.define('Tarefa', {
     id: {
